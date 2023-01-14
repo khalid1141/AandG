@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic');
+
+.inputbox{
+	position: relative;
+	width: 80%;
+	border: 0px solid;
+}
+.inputbox .input-field{
+	width: 100%;
+	padding: 10px;
+	border:1px solid rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.137);
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-family: 'Alegreya', serif;
+	font-size: 1.2em;
+	transition: 0.5s;
+}
+.inputbox .input-text{
+	position: absolute;
+	left: 2%;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.726);
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+.inputbox .input-field:valid ~.input-text,
+.inputbox .input-field:focus ~.input-text
+{
+	color: #4fd6f7;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	background-color: rgb(41, 41, 41);
+	padding: 0 10px;
+	border-left: 1px solid #4fd6f7;
+	border-right: 1px solid #4fd6f7;
+	letter-spacing: 0.2em;
+}
+.inputbox:nth-child(2) .input-field:valid ~ .input-text,
+.inputbox:nth-child(2) .input-field:focus ~ .input-text
+{
+ background:#4fd6f7;
+ color: #1d2b3a;
+ border-radius: 2px;
+}
+.inputbox .input-field:valid,
+.inputbox .input-field:focus 
+{
+	border:1px solid #4fd6f7;;
+}
+
+.input-field-no-req{
+	width: 80%;
+	border: 0px solid;
+	color: #4fd6f7;;
+	width: 100%;
+	padding: 10px;
+	border:1px solid rgba(255, 255, 255, 0.25);
+	background: #1d2b3a;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+}
+.formfile{
+	margin-top: 75px;
+}
